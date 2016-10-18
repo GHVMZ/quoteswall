@@ -4,8 +4,8 @@ angular.module('quotesWall').controller('quoteCtrl', function($scope, $http, dat
 
   // Pagination (ui.bootstrap.pagination)
   $scope.currentPage = 1;
-  $scope.pageSize = 10,
-  $scope.maxSize = 9;
+  $scope.pageSize = 30,
+  $scope.maxSize = 10;
 
   // Filter
   $scope.order = 'createdAt';
@@ -18,8 +18,9 @@ angular.module('quotesWall').controller('quoteCtrl', function($scope, $http, dat
   $scope.newQuote = {};
 
   $scope.heartIt = function(quote){
-    quote.heart ++;
     $scope.heartedQuote = quote;
+
+    quote.heart ++;
     dataService.updateQuote($scope.heartedQuote);
     console.log(quote.heart);
   }
