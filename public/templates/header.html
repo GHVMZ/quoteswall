@@ -1,0 +1,30 @@
+<nav class="navbar">
+  <div class="container">
+    <div class="row">
+
+    <div class="col-xs-12 col-sm-3 text-xs-center text-sm-left" data-aos="fade-down" data-aos-once="true">
+    <a class="logo" href="#">Quoteswall</a>
+    <hr class="hidden-sm-up">
+    </div>
+    <div class="col-xs-12 col-sm-9" data-aos="fade-down" data-aos-once="true" data-aos-delay="300">
+     <form class="form-inline pull-sm-right">
+       <div class="form-group searchy">
+       <input class="m-r-1" placeholder="Search" type="text" ng-model="search">
+       <span class="county m-r-1 hidden-sm-down">{{(quotes | filter:search).length}} found</span>
+       <div class="btn-group">
+         <a class="filter dropdown-toggle" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="hidden-sm-down">Filter </span><i class="fa fa-cog" aria-hidden="true"></i></a>
+         <div class="dropdown-menu">
+           <a ng-class="" class="dropdown-item" href="" ng-click="order = 'createdAt'">Latest</a>
+           <a class="dropdown-item" href="" ng-click="order = 'heart'">Top hearted</a>
+         </div>
+       </div>
+      </div>
+
+     <a href="" data-toggle="modal" data-target="#addModal" class="btn btn-purple m-l-1 pull-xs-right">Add<span class="hidden-sm-down"> New</span></a>
+
+   </form>
+  </div>
+
+  </div>
+ </div>
+</nav>

@@ -1,0 +1,22 @@
+<main class="container m-t-2" data-aos="fade-up" data-aos-once="true" data-aos-delay="800">
+  <p class="hidden-sm-up text-xs-center">{{(quotes | filter:search).length}} found</p>
+
+  <section class="row">
+    <article class="faded col-xs-12 col-sm-6 col-lg-4 m-t-2" ng-repeat="quote in filteredQuotes = (quotes | limitTo : pageSize : (currentPage - 1) * pageSize | orderBy:order:true | filter: search)">
+      <div class="quote p-a-2">
+
+        <h2>{{quote.text}}</h2>
+        <a ng-click="search = quote.author">{{quote.author}}</a>
+        <a class="btn btn-sm btn-outline-secondary editbtn" href="" data-toggle="modal" data-target="#editModal" ng-click="selectQuote(quote)"><i class="fa fa-pencil" aria-hidden="true"></i> edit</a>
+        <a class="btn btn-sm btn-outline-secondary heartbtn" href="" ng-click="heartIt(quote)"><i class="fa fa-heart" aria-hidden="true"></i> {{quote.heart}}</a>
+      </div>
+    </article>
+
+  </section>
+
+  <div class="text-xs-center m-t-3" ng-show="filteredQuotes.length">
+    <ul class="pagination pagination-sm" uib-pagination total-items="quotes.length" ng-model="currentPage" force-ellipses="false" boundary-link-numbers="false" max-size="maxSize" items-per-page="pageSize" num-pages="numPages"></ul>
+  </div>
+
+  <div class="text-xs-center m-t-3 result" ng-hide="filteredQuotes.length"><h3>There is no result</h3><span class="text-danger">{{search}}</span> <a href="" ng-click="search = ''">clear filter</a></div>
+</main>
