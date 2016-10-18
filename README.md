@@ -1,7 +1,7 @@
 ![Printscreen](https://anonmgur.com/up/e93f718f33f5126f9d0f0fe507ac9880.png)
 
 # Quoteswall
-Quoteswall is an app for managing your favorite quotes with CRUD-functionality.
+Quoteswall is a responsive app for managing your favorite quotes with CRUD-functionality made by John Ghavamzadeh.
 Built on the MEAN-stack, [MongoDB](https://www.mongodb.org/), [Node.js](http://www.nodejs.org/), [Express](http://expressjs.com/), and [AngularJS](https://angularjs.org/).
 
 Also using [Bootstrap 4 alpha](https://v4-alpha.getbootstrap.com/) (flex enabled), [Animate on scroll](https://github.com/michalsnik/aos), [Animate.css](https://github.com/daneden/animate.css), [FontAwesome](https://github.com/FortAwesome/Font-Awesome), [Angular UI-bootstrap](http://angular-ui.github.io/bootstrap/),  
