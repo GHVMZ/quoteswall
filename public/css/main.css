@@ -133,12 +133,30 @@ p {
 
 /* ALERT */
 .alert {
+  padding: 7px 10px;
   position: fixed;
   z-index: 3000;
-  width: 135px;
   right: 18px;
-  top: 18px;
+  top: 11px;
 }
+
+.alert button.close {
+    float: right;
+    font-size: 1.35rem;
+    font-weight: 400;
+    line-height: 1;
+    margin-left: 20px;
+    color: #7d91c7;
+    text-shadow: 0 1px 0 #2d3244;
+    opacity: 1;
+}
+
+.alert-success {
+    background-color: #303852;
+    border-color: #525e89;
+    color: #ffffff;
+}
+
 .alert.ng-enter-prepare {
   opacity: 0;
 }
@@ -149,6 +167,7 @@ p {
 .alert.ng-enter.ng-enter-active {
   transform: translateY(0);
 }
+
 .result h3{font-weight: 400; color: #fff;}
 /* GENERAL STYLES */
 :hover {

@@ -49,7 +49,7 @@ angular.module('quotesWall').controller('quoteCtrl', function($scope, $http, dat
   $scope.deleteQuote = function(){
     $scope.quotes.splice($scope.quotes.indexOf($scope.clickedQuote), 1);
     dataService.deleteQuote($scope.clickedQuote).then(function() {
-      $scope.alertMessage = "Deleted";
+      $scope.alertMessage = "Quote deleted";
       console.log("Deleted");
     });
   };
