@@ -6,4 +6,7 @@ Built with [Bootstrap 4 alpha](http://expressjs.com/) (flex enabled), [Animate o
 
 
 ## How to run
-info coming
+```bash
+$ npm install
+$ npm test
+```
