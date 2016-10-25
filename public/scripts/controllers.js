@@ -19,7 +19,7 @@ angular.module('quotesWall').controller('quoteCtrl', function($scope, $http, dat
 
   $scope.heartIt = function(quote){
     $scope.heartedQuote = quote;
-
+    quote.heart = quote.heart || 0;
     quote.heart ++;
     dataService.updateQuote($scope.heartedQuote);
     console.log(quote.heart);
