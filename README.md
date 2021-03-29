@@ -1,4 +1,4 @@
-![Printscreen](https://anonmgur.com/up/e93f718f33f5126f9d0f0fe507ac9880.png)
+![Printscreen](https://raw.githubusercontent.com/GHVMZ/quoteswall/master/quoteswall.png)
 [Click here for full printscreen](https://raw.githubusercontent.com/GHVMZ/quoteswall/master/quoteswall.png)
 
 # Quoteswall
